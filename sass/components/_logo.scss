@@ -7,10 +7,10 @@
     text-align: left;
     text-decoration: none;
     color: $blue-color;
-    .logo--dark-color {
+    &--dark-color {
         color: $black-color;
     }
-    .logo--light-color {
+    &--light-color {
     color: $white-color;
     }
 }

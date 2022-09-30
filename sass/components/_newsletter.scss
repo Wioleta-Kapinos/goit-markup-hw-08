@@ -8,22 +8,22 @@
     padding-top: 9px;
     padding-left: 78px;
     padding-bottom: 20px;
-}
-.newsletter__input {
-    border: 1px solid $trans-three;
-    border-radius: 4px;
-    background-color: $dark-gray-color;
-    padding-left: 16px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    color: $trans-one;
-    margin-left: 78px;
-    margin-right: 12px;
-    width: 358px;
-    outline: none;
-    transition-property: border;
-    @include transition;
-    &:focus-within {
-        border: 1px solid $blue-color;
+    &__input {
+        border: 1px solid $trans-three;
+        border-radius: 4px;
+        background-color: $dark-gray-color;
+        padding-left: 16px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: $trans-one;
+        margin-left: 78px;
+        margin-right: 12px;
+        width: 358px;
+        outline: none;
+        transition-property: border;
+        @include transition;
+        &:focus-within {
+            border: 1px solid $blue-color;
+        }
     }
 }

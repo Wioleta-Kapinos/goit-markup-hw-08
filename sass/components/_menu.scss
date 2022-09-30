@@ -2,7 +2,7 @@
     @include flex;
     list-style-type: none;
     padding-left: 93px;
-    .menu__link {
+    &__link {
         color: $black-color;
         font-size: get-size('body');
         font-weight: 500;
@@ -18,7 +18,7 @@
             color: $blue-color;
         }
     }
-    .menu__link--active {
+    &__link--active {
         position: relative;
         color: $blue-color;
         &::after {

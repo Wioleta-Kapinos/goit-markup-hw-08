@@ -39,9 +39,6 @@ $font-size: (
    'label': 12px,
     'send': 17px,
 );
-
 @function get-size($key) {
     @return map-get($font-size, $key);
 }
-
-

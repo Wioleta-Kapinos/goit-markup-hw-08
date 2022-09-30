@@ -1,12 +1,12 @@
 .portfolio {
-    .portfolio__buttons-list {
+    &__buttons-list {
         display: flex;
         justify-content: center;
         list-style-type: none;
         gap: 8px;
         padding-top: 94px;
     }
-    .portfolio__button {
+    &__button {
         background-color: $light-gray-color;
         font-size: get-size('button');
         font-weight: 500;
@@ -26,7 +26,7 @@
             box-shadow: 0px 3px 1px $dark-six, 0px 1px 2px $dark-ten, 0px 2px 2px $dark-two;
         }
     }
-    .portfolio__cards-list {
+    &__cards-list {
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
@@ -34,7 +34,7 @@
         padding-top: 50px;
         padding-bottom: 94px;
     }
-    .portfolio__card {
+    &__card {
         transition-property: box-shadow;
         @include transition;
         &:hover,
@@ -43,11 +43,11 @@
             cursor: pointer;
         }
     }
-    .portfolio__overlay {
+    &__overlay {
         position: relative;
         overflow: hidden;
     }
-    .portfolio__overlay-view {
+    &__overlay-view {
         background-color: $blue-next;
         position: absolute;
         padding-top: 49px;
@@ -57,7 +57,7 @@
         transform: translateY(0);
         transition: transform 250ms ease;
     }
-    .portfolio__overlay-text {
+    &__overlay-text {
         font-size: get-size('text');
         line-height: 1.55;
         letter-spacing: 0.03em;
@@ -65,24 +65,24 @@
         position: absolute;
         width: 301px;
     }
-    .portfolio__card:hover .portfolio__overlay-view,
-    .portfolio__card:focus .portfolio__overlay-view {
+    &__card:hover &__overlay-view,
+    &__card:focus &__overlay-view {
         transform: translateY(-100%);
     }
-    .portfolio__description {
+    &__description {
         border-left: 1px solid $light-color;
         border-right: 1px solid $light-color;
         border-bottom: 1px solid $light-color;
         padding: 20px 24px;
     }
-    .portfolio__heading {
+    &__heading {
         font-size: get-size('text');
         font-weight: 700;
         line-height: 2;
         letter-spacing: 0.06rem;
         text-align: left;
     }
-    .portfolio__paragraph {
+    &__paragraph {
         font-size: get-size('team');
         line-height: 1.87;
         letter-spacing: 0.03rem;

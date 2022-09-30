@@ -1,9 +1,9 @@
 .what-do {
-    .what-do__heading {
+    &__heading {
         @include section;
         padding-top: 94px;
     }
-    .what-do__list {
+    &__list {
         display: flex;
         list-style-type: none;
         gap: 30px;
@@ -11,13 +11,13 @@
         padding-bottom: 94px;
         justify-content: space-between;
     }
-    .what-do__item {
+    &__item {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: flex-end;
     }
-    .what-do__title {
+    &__title {
         font-size: get-size('body');
         font-weight: 700;
         line-height: 1.17;

@@ -1,5 +1,5 @@
 .form {
-    .form__heading {
+    &__heading {
         font-size: get-size('form');
         font-weight: 700;
         line-height: 1.15;
@@ -8,7 +8,7 @@
         width: 100%;
         padding-bottom: 12px; 
     } 
-    .form__label {
+    &__label {
         position: relative;
         font-size: get-size('label');
         line-height: 1.16;
@@ -16,7 +16,7 @@
         color: $gray-color;
         margin-top: 10px;
     }
-    .form__input {
+    &__input {
         margin-top: 4px;
         padding: 12px 0 12px 42px;
         margin-bottom: 10px;
@@ -29,12 +29,12 @@
             outline: none;
         }
     }
-    .form__icon {
+    &__icon {
         position: absolute;
         top: 40%;
         left: 15px;
     }
-    .form__text {
+    &__text {
         padding: 12px 16px;
         color: $trans-four;
         font-size: get-size('label');
@@ -51,10 +51,10 @@
             outline: none;
         }
     }
-    .form__input:focus ~ .form__icon {
+    &__input:focus ~ &__icon {
         fill: $blue-color;
     }
-    .form__statement {
+    &__statement {
         font-size: get-size('body');
         line-height: 1.71;
         letter-spacing: 0.03em;
@@ -63,29 +63,29 @@
         padding-top: 20px;
         padding-left: 8px;
     }
-    .form__checkbox {
+    &__checkbox {
         width: 0;
         height: 0;
         opacity: 0;
     }
-    .form__icon-rectangle {
+    &__icon-rectangle {
         fill: none;
         border-radius: 2px;
         border: 2px solid $black-color;
     }
-    .form__icon-vector {
+    &__icon-vector {
         transform: translateX(-120%);
         border: none;
     }
-    .form__checkbox:checked ~ .form__icon-rectangle {
+    &__checkbox:checked ~ &__icon-rectangle {
         border-radius: 2px;
         border: 2px solid $blue-color;
         background-color: $blue-color;
     }
-    .form__statute {
+    &__statute {
         color: $blue-color;
     }
-    .form__privacy {
+    &__privacy {
         color: $blue-color;
     }
 }

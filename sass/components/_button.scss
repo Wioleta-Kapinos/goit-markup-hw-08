@@ -12,59 +12,59 @@
         border: 1px solid $blue-color;
         transform: scale(1.05);
     }
-}
-.button__footer {
-   @include button;
-    text-align: left;
-    width: 200px;
-    padding: 10px 24px 10px 42px;
-    outline: none;
-    transition-property: transform;
-    @include transition;
-    &:hover,
-    &:focus {
-        transform: scale(1.10);
+    &__footer {
+        @include button;
+        text-align: left;
+        width: 200px;
+        padding: 10px 24px 10px 42px;
+        outline: none;
+        transition-property: transform;
+        @include transition;
+        &:hover,
+        &:focus {
+            transform: scale(1.10);
+        }
     }
-    .button__icon-send {
+    &__icon-send {
         position: absolute;
         margin-left: 24px;
         width: 24px;
         height: 24px;
     }
-}
-.button-close {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 8px;
-    right: 8px;
-    background-color: $white-color;
-    border-radius: 50%;
-    border: 1px solid $dark-six;
-    @include flex;
-    padding: 8px;
-    cursor: pointer;
-    transition-property: transform;
-    @include transition;
-    &:hover,
-    &:focus {
-        transform: scale(1.25);
-        background-color: $light-gray-color;
+    &-close {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 8px;
+        right: 8px;
+        background-color: $white-color;
+        border-radius: 50%;
+        border: 1px solid $dark-six;
+        @include flex;
+        padding: 8px;
+        cursor: pointer;
+        transition-property: transform;
+        @include transition;
+        &:hover,
+        &:focus {
+            transform: scale(1.25);
+            background-color: $light-gray-color;
+        }
     }
-}
-.button-send {
-    @include button;
-    border-radius: none;
-    padding: 10px 76px;
-    text-align: center;
-    align-items: center;
-    margin-top: 30px;
-    transform: translateX(65%);
-    transition-property: border;
-    @include transition;
-    &:hover,
-    &:focus {
-        border-radius: 4px;
-        font-size: get-size('send');
+    &-send {
+        @include button;
+        border-radius: none;
+        padding: 10px 76px;
+        text-align: center;
+        align-items: center;
+        margin-top: 30px;
+        transform: translateX(65%);
+        transition-property: border;
+        @include transition;
+        &:hover,
+        &:focus {
+            border-radius: 4px;
+            font-size: get-size('send');
+        }
     }
 }
