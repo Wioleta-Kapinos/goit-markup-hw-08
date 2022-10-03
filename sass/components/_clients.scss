@@ -31,3 +31,11 @@
         border-color: $blue-color;
     }
 }
+@media (max-width: 767px) {
+    .clients__heading {
+        padding-top: 60px;
+        padding-bottom: 30px;
+        font-size: get-size('mobile-team');
+        line-height: 1.17;
+    }
+}

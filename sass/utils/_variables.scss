@@ -38,6 +38,9 @@ $font-size: (
     'form': 20px,
    'label': 12px,
     'send': 17px,
+    'mobile': 40px,
+  'mobile-heading': 26px,
+  'mobile-team': 28px,
 );
 @function get-size($key) {
     @return map-get($font-size, $key);

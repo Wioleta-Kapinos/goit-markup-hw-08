@@ -6,11 +6,16 @@ body {
 }
 
 .container {
-  width: 1170px;
-  padding: 0;
-  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1170px;
 }
 
+@media (max-width: 767px) {
+  .container {
+    width: 480px;
+    padding: 0 15px;
+  }
+}
 *,
 *::before,
 *::after {
@@ -22,6 +27,8 @@ body {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 *:focus {
@@ -34,6 +41,18 @@ img {
   padding-bottom: 32px;
 }
 
+@media (max-width: 768px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,6 +122,11 @@ img {
   display: block;
 }
 
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -167,6 +191,11 @@ img {
   fill: #2196F3;
 }
 
+@media (max-width: 768px) {
+  .contact {
+    display: none;
+  }
+}
 .page-main {
   background-color: #2F303A;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/new-photo.jpg");
@@ -195,6 +224,34 @@ img {
   padding-bottom: 280px;
 }
 
+@media (max-width: 767px) {
+  .page-main__heading {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    margin: 0;
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    -webkit-transform: translateY(-14%);
+            transform: translateY(-14%);
+  }
+}
+@media (max-width: 767px) {
+  .page-main {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/mobile1x-img.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile1x-img.jpg");
+    background-repeat: no-repeat;
+    width: 480px;
+    height: 400px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .page-main {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/mobile-img@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile-img@2x.jpg");
+  }
+}
 .button {
   background-color: #2196F3;
   color: #FFFFFF;
@@ -328,6 +385,14 @@ img {
   font-size: 17px;
 }
 
+@media (max-width: 767px) {
+  .button {
+    margin-bottom: 118px;
+    -webkit-transform: translateY(-240%);
+            transform: translateY(-240%);
+    position: absolute;
+  }
+}
 .lorem {
   list-style-type: none;
   display: -webkit-box;
@@ -369,6 +434,21 @@ img {
   padding-top: 10px;
 }
 
+@media (max-width: 767px) {
+  .lorem__heading {
+    text-align: center;
+  }
+  .lorem {
+    padding-top: 60px;
+    display: block;
+    padding-bottom: 60px;
+  }
+  .lorem__icon {
+    width: 450px;
+    padding-left: 190px;
+    margin-top: 30px;
+  }
+}
 .what-do__heading {
   font-size: 36px;
   font-weight: 700;
@@ -415,6 +495,11 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
+@media (max-width: 767px) {
+  .what-do {
+    display: none;
+  }
+}
 .our-team {
   background-color: #F5F4FA;
   padding-bottom: 94px;
@@ -466,6 +551,31 @@ img {
   padding-bottom: 30px;
 }
 
+@media (max-width: 767px) {
+  .our-team__heading {
+    font-size: 28px;
+    line-height: 1.17;
+  }
+  .our-team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .our-team__job {
+    padding-bottom: 16px;
+  }
+  .our-team__img {
+    width: 450px;
+    height: 460px;
+  }
+  .our-team {
+    padding-bottom: 60px;
+  }
+}
 .social-media {
   list-style-type: none;
   display: -webkit-box;
@@ -507,6 +617,11 @@ img {
   background-color: #2196F3;
 }
 
+@media (max-width: 767px) {
+  .social-media {
+    padding-bottom: 24px;
+  }
+}
 .clients__heading {
   font-weight: 700;
   font-size: 36px;
@@ -547,6 +662,14 @@ img {
   border-color: #2196F3;
 }
 
+@media (max-width: 767px) {
+  .clients__heading {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
 .footer {
   background-color: #2F303A;
   padding: 60px 0;

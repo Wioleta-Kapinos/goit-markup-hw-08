@@ -35,4 +35,9 @@
     &__phone:focus &__icon {
         fill: $blue-color;
     } 
-}   
+} 
+@media (max-width: 768px) {
+    .contact {
+        display: none;
+    }
+}  
