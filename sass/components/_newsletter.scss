@@ -27,3 +27,12 @@
         }
     }
 }
+@media (max-width: 767px) {
+    .newsletter {
+        padding-left: 0;
+        text-align: center;
+    }
+    .newsletter__input {
+        margin-left: 0;
+    }
+}

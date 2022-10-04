@@ -14,7 +14,7 @@
 
 <body>
     <header class="header">
-        <div class="container">
+        <div class="header__container">
             <nav class="nav">
             <a class="logo" href="./index.html">Web<span class="logo logo--dark-color">Studio</span></a>
             <ul class="menu">
@@ -34,6 +34,11 @@
                     </svg>+48 111 111 111</a></li>
             </ul>
             </nav>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="menu-toggle__icon" width="24" height="16">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -50,7 +55,7 @@
             <ul class="portfolio__cards-list">
                 <li class="portfolio__card">
                     <div class="portfolio__overlay">
-                        <img src="./images/project1.jpg" alt="open laptop with people profiles"
+                        <img src="./images/project1.jpg" alt="open laptop with people profiles" srcset="./images/project1@2.jpg"
                         width="370" height="294"/>
                         <div class="portfolio__overlay-view">
                             <p class="portfolio__overlay-text">
@@ -67,7 +72,7 @@
                 </li>
                 <li class="portfolio__card">
                     <div class="portfolio__overlay">
-                        <img src="./images/project2.jpg" alt="two players play the basketball"
+                        <img src="./images/project2.jpg" alt="two players play the basketball" srcset="./images/project2@2.jpg"
                         width="370" height="294"/>
                         <div class="portfolio__overlay-view">
                         <p class="portfolio__overlay-text">
@@ -84,7 +89,7 @@
                 </li>
                 <li class="portfolio__card">
                     <div class="portfolio__overlay">
-                        <img src="./images/project3.jpg" alt="inscription the seafood restaurant"
+                        <img src="./images/project3.jpg" alt="inscription the seafood restaurant" srcset="./images/project3@2.jpg"
                         width="370" height="294"/>
                         <div class="portfolio__overlay-view">
                         <p class="portfolio__overlay-text">
@@ -101,7 +106,7 @@
                 </li>
                 <li class="portfolio__card">
                     <div class="portfolio__overlay">
-                        <img src="./images/project4.jpg" alt="black on-ear headphones"
+                        <img src="./images/project4.jpg" alt="black on-ear headphones" srcset="./images/project4@2.jpg"
                         width="370" height="294"/>
                         <div class="portfolio__overlay-view">
                         <p class="portfolio__overlay-text">
@@ -118,7 +123,7 @@
                 </li>
                 <li class="portfolio__card">
                     <div class="portfolio__overlay">
-                        <img src="./images/project5.jpg" alt="two boxes white and brown"
+                        <img src="./images/project5.jpg" alt="two boxes white and brown" srcset="./images/project5@2.jpg"
                         width="370" height="294"/>
                         <div class="portfolio__overlay-view">
                         <p class="portfolio__overlay-text">
@@ -135,7 +140,7 @@
                 </li>
                 <li class="portfolio__card">
                     <div class="portfolio__overlay">
-                        <img src="./images/project6.jpg" alt="monitor with an open website"
+                        <img src="./images/project6.jpg" alt="monitor with an open website" srcset="./images/project6@2.jpg"
                         width="370" height="294"/>
                         <div class="portfolio__overlay-view">
                         <p class="portfolio__overlay-text">
@@ -152,7 +157,7 @@
                 </li>
                 <li class="portfolio__card">
                     <div class="portfolio__overlay">
-                        <img src="./images/project7.jpg" alt="open journal"
+                        <img src="./images/project7.jpg" alt="open journal" srcset="./images/project7@2.jpg"
                         width="370" height="294"/>
                         <div class="portfolio__overlay-view">
                         <p class="portfolio__overlay-text">
@@ -169,7 +174,7 @@
                 </li>
                 <li class="portfolio__card">
                     <div class="portfolio__overlay">
-                        <img src="./images/project8.jpg" alt="white label"
+                        <img src="./images/project8.jpg" alt="white label" srcset="./images/project8@2.jpg"
                         width="370" height="294"/>
                         <div class="portfolio__overlay-view">
                         <p class="portfolio__overlay-text">
@@ -186,7 +191,7 @@
                 </li>
                 <li class="portfolio__card">
                     <div class="portfolio__overlay">
-                        <img src="./images/project9.jpg" alt="man working at the laptop"
+                        <img src="./images/project9.jpg" alt="man working at the laptop" srcset="./images/project9@2.jpg"
                         width="370" height="294"/>
                         <div class="portfolio__overlay-view">
                         <p class="portfolio__overlay-text">
@@ -261,5 +266,31 @@
             </div>
         </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg width="18.7" height="18.7">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu">
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="./index.html" >Agencja</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link mobile-menu__link--active" href="./portfolio.html">Portfolio</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Kontakt</a></li>
+        </ul>
+        <div class="mobile-links">
+            <a class="mobile-links__phone" href="tel:+48111111111">+48 111 111 111</a>
+            <a class="mobile-links__email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </div>
+        <ul class="mobile-socials">
+            <li><a class="mobile-socials__link" href="">Instagram |</a></li>
+            <li><a class="mobile-socials__link" href="">Twitter |</a></li>
+            <li><a class="mobile-socials__link" href="">Facebook |</a></li>
+            <li><a class="mobile-socials__link" href="">LinkedIn |</a></li>
+        </ul>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>

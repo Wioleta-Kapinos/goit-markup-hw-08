@@ -90,3 +90,12 @@
         color: $gray-color;
     }
 }
+@media (max-width: 767px) {
+    .portfolio__buttons-list {
+        flex-wrap: wrap;
+        padding-top: 60px;
+    }
+    .portfolio__cards-list {
+        padding-top: 40px;
+    }
+}

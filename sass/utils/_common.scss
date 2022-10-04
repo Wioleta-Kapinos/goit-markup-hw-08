@@ -10,7 +10,16 @@ body {
 }
 @media (max-width: 767px) {
     .container {
-        width: 480px;
+        max-width: 450px;
+        padding: 0 15px;
+    }
+    body {
+        width: 100vw;
+    }
+}
+@media (min-width: 768px) and (max-width:1200px) {
+    .container {
+        max-width: 738px;
         padding: 0 15px;
     }
 }

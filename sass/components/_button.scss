@@ -74,4 +74,10 @@
         transform: translateY(-240%);
         position: absolute;
     }
+    .button__footer {
+        margin-top: 20px;
+    }
+    .button-send {
+        background-color: $blue-two;
+    }
 }

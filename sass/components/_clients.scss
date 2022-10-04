@@ -38,4 +38,10 @@
         font-size: get-size('mobile-team');
         line-height: 1.17;
     }
+    .clients__logo-list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: calc(100 - 30) /2;
+        padding-bottom: 60px;
+    }
 }

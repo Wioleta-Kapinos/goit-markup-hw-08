@@ -14,3 +14,9 @@
     color: $white-color;
     }
 }
+@media (max-width: 767px) {
+    .logo {
+    font-size: get-size('mobile-logo');
+    line-height: 1.17;
+    }
+}

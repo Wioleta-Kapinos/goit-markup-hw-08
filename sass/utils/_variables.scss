@@ -22,8 +22,10 @@ $dark-seven: rgba(0, 0, 0, 0.2);
 $dark-eight: rgba(0, 0, 0, 0.16);
 $dark-nine: rgba(0, 0, 0, 0.06);
 $dark-ten: rgba(0, 0, 0, 0.08);
+$dark-eleven: rgba(0, 0, 0, 0.04);
 $light-next: #AFB1B8;
 $blue-next: rgba(33, 150, 243, 0.9);
+$blue-two: #188CE8;
 
 $fonts-family: 'Roboto', 'Raleway', sans-serif;
 
@@ -41,6 +43,10 @@ $font-size: (
     'mobile': 40px,
   'mobile-heading': 26px,
   'mobile-team': 28px,
+  'mobile-phone': 34px,
+  'mobile-logo': 24px,
+  'mobile-email': 24px,
+  'mobile-social': 18px,
 );
 @function get-size($key) {
     @return map-get($font-size, $key);

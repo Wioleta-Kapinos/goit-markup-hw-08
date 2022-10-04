@@ -58,3 +58,24 @@
         }
     }
 }
+@media (max-width: 767px) {
+    .footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer__address,
+    .footer__contact {
+        text-align: center;
+    }
+    .footer__phone {
+        padding-bottom: 60px;
+    }
+    .footer__social-links {
+        text-align: center;
+        padding-left: 0;
+    }
+    .footer__social-media {
+        justify-content: center;
+        padding-bottom: 60px;
+    }
+}

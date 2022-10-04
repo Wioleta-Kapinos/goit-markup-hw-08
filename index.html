@@ -14,7 +14,7 @@
 
 <body>
     <header class="header">
-        <div class="container">
+        <div class="header__container">
             <nav class="nav">
             <a class="logo" href="./index.html">Web<span class="logo logo--dark-color">Studio</span></a>
             <ul class="menu">
@@ -36,7 +36,7 @@
             </nav>
             <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                 <svg class="menu-toggle__icon" width="24" height="16">
-                    <use href="./images/icon.svg#icon-menu"></use>
+                    <use href="./images/icons.svg#icon-menu"></use>
                 </svg>
             </button>
         </div>
@@ -105,17 +105,17 @@
                 <h2 class="what-do__heading">Czym się zajmujemy</h2>
                 <ul class="what-do__list">
                     <li class="what-do__item">
-                        <img src="./images/box1.jpg" alt="the programmer creates the program" 
+                        <img src="./images/box1.jpg" alt="the programmer creates the program" srcset="./images/box1@2.jpg"
                         width="370" height="294"/>
                         <p class="what-do__title">Aplikacje komputerowe</p>
                     </li>
                     <li class="what-do__item">
-                        <img src="./images/box2.jpg" alt="programmer at the computer with the phone"
+                        <img src="./images/box2.jpg" alt="programmer at the computer with the phone" srcset="./images/box2@2.jpg"
                         width="370" height="294" />
                         <p class="what-do__title">Aplikacje mobilne</p>
                     </li>
                     <li class="what-do__item">
-                        <img src="./images/box3.jpg" alt="the programmer chooses a color"
+                        <img src="./images/box3.jpg" alt="the programmer chooses a color" srcset="./images/box3@2.jpg"
                         width="370" height="294" />
                         <p class="what-do__title">Rozwiązania graficzne</p>
                     </li>
@@ -447,25 +447,25 @@
         </div>
     </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
+        <button class="menu-toggle-close js-close-menu">
             <svg width="18.7" height="18.7">
-                <use href="./images/icon.svg#icon-close"></use>
+                <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
         <ul class="mobile-menu">
-            <li><a href="./index.html" class="mobile-menu__link mobile-menu__link--active">Agencja</a></li>
-            <li><a href="./portfolio.html" class="mobile-menu__link">Portfolio</a></li>
-            <li><a href="" class="mobile-menu__link">Kontakt</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link mobile-menu__link--active" href="./index.html" >Agencja</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="./portfolio.html">Portfolio</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Kontakt</a></li>
         </ul>
-        <div class="mobile-contact">
-            <a class="mobile-contact__phone" href="tel:+48111111111">+48 111 111 111</a>
-            <a class="mobile-contact__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <div class="mobile-links">
+            <a class="mobile-links__phone" href="tel:+48111111111">+48 111 111 111</a>
+            <a class="mobile-links__email" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </div>
         <ul class="mobile-socials">
-            <li><a class="mobile-socials__link" href="">Instagram</a></li>
-            <li><a class="mobile-socials__link" href="">Twitter</a></li>
-            <li><a class="mobile-socials__link" href="">Facebook</a></li>
-            <li><a class="mobile-socials__link" href="">LinkedIn</a></li>
+            <li><a class="mobile-socials__link" href="">Instagram |</a></li>
+            <li><a class="mobile-socials__link" href="">Twitter |</a></li>
+            <li><a class="mobile-socials__link" href="">Facebook |</a></li>
+            <li><a class="mobile-socials__link" href="">LinkedIn |</a></li>
         </ul>
     </div>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
