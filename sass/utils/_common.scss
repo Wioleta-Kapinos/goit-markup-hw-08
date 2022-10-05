@@ -1,7 +1,7 @@
 body {
     font-family: $fonts-family;
     color: $black-color;
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 .container {
@@ -10,7 +10,7 @@ body {
 }
 @media (max-width: 767px) {
     .container {
-        max-width: 450px;
+        max-width: 480px;
         padding: 0 15px;
     }
     body {

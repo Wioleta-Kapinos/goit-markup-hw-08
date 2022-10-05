@@ -89,3 +89,13 @@
         color: $blue-color;
     }
 }
+@media (max-width: 767px) {
+    .form__heading {
+        line-height: 1.5;
+    }
+    .form__statement {
+        font-size: get-size('mobile-statement');
+        line-height: 1.17;
+        padding-left: 0;
+    }
+}
