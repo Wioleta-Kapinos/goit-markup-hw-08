@@ -18,8 +18,9 @@ body {
     }
 }
 @media (min-width: 768px) and (max-width:1200px) {
+    .header__container,
     .container {
-        max-width: 738px;
+        max-width: 768px;
         padding: 0 15px;
     }
 }

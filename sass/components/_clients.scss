@@ -36,12 +36,27 @@
         padding-top: 60px;
         padding-bottom: 30px;
         font-size: get-size('mobile-team');
-        line-height: 1.17;
     }
     .clients__logo-list {
         display: flex;
         flex-wrap: wrap;
         flex-basis: calc(100 - 30) /2;
         padding-bottom: 60px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+    .clients__heading {
+        padding-top: 60px;
+        font-size: get-size('tablet-team');
+        padding-bottom: 30px;
+    }
+    .clients__logo-list {
+        flex-wrap: wrap;
+        flex-basis: calc((100% - 60px) /2);
+        justify-content: flex-start;
+        padding-bottom: 60px;
+    }
+    .clients__link {
+        width: 226px;
     }
 }

@@ -1,3 +1,9 @@
 .nav {
     display: flex;  
 }
+@media (min-width: 767px) and (max-width: 1200px) {
+    .nav {
+        justify-content: center;
+        align-items: center;
+    }
+}

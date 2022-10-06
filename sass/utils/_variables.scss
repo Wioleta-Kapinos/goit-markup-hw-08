@@ -48,6 +48,8 @@ $font-size: (
 'mobile-email': 24px,
 'mobile-social': 18px,
 'mobile-statement': 12px,
+'tablet-heading': 26px,
+'tablet-team':28px,
 );
 @function get-size($key) {
     @return map-get($font-size, $key);

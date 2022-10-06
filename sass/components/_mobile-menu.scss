@@ -7,16 +7,16 @@
         background-color: transparent;
         outline: none;
         padding-left: 284px;
-        &:hover,
-        &:focus {
-            fill: $blue-color;
-        }
         &__icon {
             width: 24px;
             height: 16px;
             margin: 8px;
             cursor: pointer;
             fill: $black-color;
+            &:hover,
+            &:focus {
+                fill: $blue-color;
+            }
         }
     }
     .menu-container {

@@ -70,8 +70,9 @@
 }
 @media (max-width: 767px) {
     .button {
-        margin-bottom: 118px;
-        transform: translateY(-240%);
+        margin-top: 0;
+        margin-bottom: 0;
+        transform: translateY(460%);
         position: absolute;
     }
     .button__footer {
@@ -80,5 +81,15 @@
     .button-send {
         background-color: $blue-two;
         transform: translateX(45%);
+    }
+}
+@media (min-width: 768px) and (max-width:1200px) {
+    .button {
+        margin-top: 0;
+        margin-bottom: 0;
+        transform: translateY(460%);
+    }
+    .button__footer {
+        margin-top: 20px;
     }
 }

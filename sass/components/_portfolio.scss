@@ -93,10 +93,11 @@
 @media (max-width: 767px) {
     .portfolio__buttons-list {
         flex-wrap: wrap;
+        justify-content: flex-start;
         padding-top: 60px;
     }
-    .portfolio__item {
-        flex-basis: calc((100% - 16px) / 3);
+    .portfolio__button {
+        padding: 6px 25px;
     }
     .portfolio__cards-list {
         padding-top: 40px;

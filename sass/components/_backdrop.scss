@@ -16,5 +16,8 @@
     pointer-events: none;
 }
 @media (max-width: 767px) {
-
+    .backdrop {
+        width: 480px;
+        height: 796px;
+    }
 }
