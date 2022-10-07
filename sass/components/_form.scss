@@ -99,3 +99,10 @@
         padding-left: 0;
     }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+    .form__statement {
+        font-size: get-size('mobile-statement');
+        line-height: 1.17;
+        padding-left: 0;
+    }
+}

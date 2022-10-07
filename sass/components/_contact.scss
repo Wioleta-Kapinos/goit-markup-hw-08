@@ -41,7 +41,7 @@
         display: none;
     }
 }
-@media (min-width: 768px) and (max-width:1200px) {
+@media (min-width: 768px) and (max-width:1199px) {
     .contact {
         flex-direction: column;
         gap: 10px;
@@ -57,5 +57,10 @@
     }
     .contact__phone {
         margin-left: 8px;
+    }
+}
+@media (min-width: 1200px) {
+    .contact__email {
+        margin-left: 300px;
     }
 }

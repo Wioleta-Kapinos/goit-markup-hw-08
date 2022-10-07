@@ -53,7 +53,7 @@
             background-image: linear-gradient($gradient-one, $gradient-one), url("../images/mobile-img@2x.jpg");
         }
 }
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
     .page-main {
         background-image: linear-gradient($gradient-one, $gradient-one), url("../images/tablet-imgx1.jpg");
         background-repeat: no-repeat;
@@ -74,5 +74,22 @@
     screen and (min-resolution: 2dppx) {
         .page-main {
             background-image: linear-gradient($gradient-one, $gradient-one), url("../images/tablet-img@2.jpg");
+        }
+}
+@media (min-width: 1200px) {
+    .page-main {
+        background-image: linear-gradient($gradient-one, $gradient-one), url("../images/desktop-x1.jpg");
+        background-repeat: no-repeat;
+    }
+    .page-main__heading {
+        font-weight: 900;
+        transform: translateX(27%);
+    }
+}
+@media screen and (min-device-pixel-ratio:2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .page-main {
+            background-image: linear-gradient($gradient-one, $gradient-one), url("../images/desktop-@2.jpg");
         }
 }

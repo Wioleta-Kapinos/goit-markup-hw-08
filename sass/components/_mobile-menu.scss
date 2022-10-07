@@ -20,7 +20,7 @@
         }
     }
     .menu-container {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         min-width: 480px;
@@ -29,7 +29,7 @@
         background-color: $white-color;
         box-shadow: 0px 4px 8px $dark-eleven, 0px 2px 4px $dark-ten, 0px 1px 3px $dark-eight;
         padding: 48px 0 48px 40px;
-        transform: translateX(100%);
+        transform: translateX(-100%);
         transition: transform 250ms ease-in-out;
     }
     .menu-container.is-open {

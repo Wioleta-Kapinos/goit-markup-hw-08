@@ -44,7 +44,7 @@
         padding-bottom: 60px;
     }
 }
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
     .clients__heading {
         padding-top: 60px;
         font-size: get-size('tablet-team');
@@ -53,10 +53,7 @@
     .clients__logo-list {
         flex-wrap: wrap;
         flex-basis: calc((100% - 60px) /2);
-        justify-content: flex-start;
+        justify-content: center;
         padding-bottom: 60px;
-    }
-    .clients__link {
-        width: 226px;
     }
 }

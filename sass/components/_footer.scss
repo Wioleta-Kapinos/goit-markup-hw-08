@@ -73,21 +73,32 @@
     .footer__social-links {
         text-align: center;
         padding-left: 0;
+        padding-right: 119px;
     }
     .footer__social-media {
         justify-content: center;
         padding-bottom: 60px;
     }
 }
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
     .footer__address,
     .footer__contact {
         text-align: center;
+    }
+    .footer__address {
+        padding-left: 61px;
+    }
+    .footer__email,
+    .footer__phone {
+        padding-left: 40px;
     }
     .footer .container {
         flex-wrap: wrap;
     }
     .footer__social-links {
-        padding-left: 198px;
+        padding-left: 150px;
+    }
+    .footer .logo {
+        padding-left: 100px;
     }
 }

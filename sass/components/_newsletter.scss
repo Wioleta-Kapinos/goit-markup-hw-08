@@ -36,12 +36,17 @@
         margin-left: 0;
     }
 }
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
     .newsletter {
         padding-top: 60px;
+        padding-left: 263px
     }
     .newsletter__form {
         display: flex;
         flex-direction: column;
+        padding-left: 70px;  
+    }
+    .newsletter__input {
+        width: 450px;
     }
 }

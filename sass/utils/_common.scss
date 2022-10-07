@@ -2,7 +2,7 @@ body {
     font-family: $fonts-family;
     color: $black-color;
     max-width: 1600px;
-    margin: 0 auto;
+    margin: 0;
 }
 .container {
     min-width: 320px;
@@ -17,10 +17,17 @@ body {
         width: 100vw;
     }
 }
-@media (min-width: 768px) and (max-width:1200px) {
+@media (min-width: 768px) and (max-width:1199px) {
     .header__container,
     .container {
         max-width: 768px;
+        padding: 0 15px;
+    }
+}
+@media (min-width: 1200px) {
+    .header__container,
+    .container {
+        max-width: 1200px;
         padding: 0 15px;
     }
 }

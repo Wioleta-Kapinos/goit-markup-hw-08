@@ -35,7 +35,7 @@
         letter-spacing: 0.03rem;
         text-align: center;
         color: $gray-color;
-        padding-bottom: 30px;
+        padding-bottom: 16px;
     }
 }
 @media (max-width: 767px) {
@@ -60,7 +60,7 @@
         padding-bottom: 60px;
     }
 }
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
     .our-team__heading {
         padding-top: 60px;
         font-size: get-size('tablet-team');

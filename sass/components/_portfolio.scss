@@ -110,3 +110,16 @@
         width: 402px;
     }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+    .portfolio__buttons-list {
+        padding-top: 66px;
+    }
+    .portfolio__cards-list {
+        padding-top: 36px;
+        flex-wrap: wrap;
+        flex-basis: calc((100% - 30px) /2);
+    }
+    .portfolio__card {
+        width: 354px;
+    }
+}

@@ -31,8 +31,13 @@
         background-color: $gradient-two;
     }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
     .what-do {
         display: none;
+    }
+}
+@media (min-width: 1200px) {
+    .what-do__heading {
+        padding-left: 20px;
     }
 }

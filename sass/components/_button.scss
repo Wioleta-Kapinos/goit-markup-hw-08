@@ -2,8 +2,8 @@
     @include button;
     text-align: center;
     padding: 10px 41px 10px 42px;
-    margin-top:350px;
-    margin-bottom: 200px;
+    transform: translateY(700%);
+    margin-left: 400px;
     position: absolute;
     transition-property: border, transform;
     @include transition;
@@ -70,26 +70,40 @@
 }
 @media (max-width: 767px) {
     .button {
-        margin-top: 0;
-        margin-bottom: 0;
         transform: translateY(460%);
         position: absolute;
+        margin: 0;
     }
     .button__footer {
         margin-top: 20px;
     }
     .button-send {
-        background-color: $blue-two;
         transform: translateX(45%);
+        &:hover,
+        &:focus {
+        background-color: $blue-two;
+        }
     }
 }
-@media (min-width: 768px) and (max-width:1200px) {
+@media (min-width: 768px) and (max-width:1199px) {
     .button {
-        margin-top: 0;
-        margin-bottom: 0;
         transform: translateY(460%);
+        margin: 0;
     }
     .button__footer {
         margin-top: 20px;
+        margin-left: 190px;
+    }
+    .button-send {
+        transform: translateX(45%);
+        &:hover,
+        &:focus {
+            background-color: $blue-two;
+        }
+    }
+    .button-close:hover,
+    .button-close:focus {
+        background-color: $white-color;
+        fill: $blue-color;
     }
 }
