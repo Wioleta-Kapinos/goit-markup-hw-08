@@ -18,12 +18,18 @@ body {
   body {
     width: 100vw;
   }
+  img {
+    width: 100%;
+  }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .header__container,
 .container {
     max-width: 768px;
     padding: 0 15px;
+  }
+  img {
+    width: 100%;
   }
 }
 @media (min-width: 1200px) {
@@ -44,7 +50,6 @@ body {
 
 img {
   display: block;
-  width: 100%;
   height: auto;
 }
 
@@ -1022,10 +1027,12 @@ img {
   .footer__phone {
     padding-bottom: 60px;
   }
+  .footer__social-heading {
+    padding-left: 30px;
+  }
   .footer__social-links {
     text-align: center;
     padding-left: 0;
-    padding-right: 119px;
   }
   .footer__social-media {
     -webkit-box-pack: center;
@@ -1097,7 +1104,8 @@ img {
     text-align: center;
   }
   .newsletter__input {
-    margin-left: 0;
+    width: 450px;
+    margin: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
