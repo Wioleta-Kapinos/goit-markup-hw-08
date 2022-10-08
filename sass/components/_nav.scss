@@ -1,6 +1,11 @@
 .nav {
     display: flex;  
 }
+@media (max-width: 767px) {
+    .nav {
+        align-items: center;
+    }
+}
 @media (min-width: 767px) and (max-width: 1199px) {
     .nav {
         justify-content: center;

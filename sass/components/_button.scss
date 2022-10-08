@@ -2,11 +2,7 @@
     @include button;
     text-align: center;
     padding: 10px 41px 10px 42px;
-    transform: translateY(700%);
-    margin-left: 400px;
-    position: absolute;
-    transition-property: border, transform;
-    @include transition;
+    margin-top: 30px;
     &:hover,
     &:focus {
         border: 1px solid $blue-color;
@@ -69,11 +65,6 @@
     }
 }
 @media (max-width: 767px) {
-    .button {
-        transform: translateY(460%);
-        position: absolute;
-        margin: 0;
-    }
     .button__footer {
         margin-top: 20px;
     }
@@ -86,10 +77,6 @@
     }
 }
 @media (min-width: 768px) and (max-width:1199px) {
-    .button {
-        transform: translateY(460%);
-        margin: 0;
-    }
     .button__footer {
         margin-top: 20px;
         margin-left: 190px;

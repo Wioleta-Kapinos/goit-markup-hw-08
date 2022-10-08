@@ -2,7 +2,7 @@ body {
     font-family: $fonts-family;
     color: $black-color;
     max-width: 1600px;
-    margin: 0;
+    margin: 0 auto;
 }
 .container {
     min-width: 320px;
@@ -12,6 +12,7 @@ body {
     .container {
         max-width: 480px;
         padding: 0 15px;
+        margin: 0 auto;
     }
     body {
         width: 100vw;
@@ -25,6 +26,7 @@ body {
     .container {
         max-width: 768px;
         padding: 0 15px;
+        margin: 0 auto;
     }
     img {
         width: 100%;
@@ -35,6 +37,7 @@ body {
     .container {
         max-width: 1200px;
         padding: 0 15px;
+        margin: 0 auto;
     }
 }
 *,
@@ -46,6 +49,8 @@ body {
 }
 img {
     display: block;
+}
+.image {
     height: auto;
 }
 *:focus {

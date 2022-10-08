@@ -122,4 +122,8 @@
     .portfolio__card {
         width: 354px;
     }
+    .portfolio__card:first-child
+    .portfolio__description {
+        padding-bottom: 56px;
+    }
 }

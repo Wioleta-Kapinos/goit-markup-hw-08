@@ -40,8 +40,11 @@
     .clients__logo-list {
         display: flex;
         flex-wrap: wrap;
-        flex-basis: calc(100 - 30) /2;
+        flex-basis: calc((100% - 30px) /2);
         padding-bottom: 60px;
+    }
+    .clients__icon-logo {
+        width: 210px;
     }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -55,5 +58,8 @@
         flex-basis: calc((100% - 60px) /2);
         justify-content: center;
         padding-bottom: 60px;
+    }
+    .clients__icon-logo {
+        width: 226px;
     }
 }
